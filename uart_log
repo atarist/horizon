@@ -1,0 +1,373 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.11.11 23:29:16 =~=~=~=~=~=~=~=~=~=~=~=
+  Splash: BMP found Width 720  Height 576
+Splash: BMP found Width 720  Height 576
+
+CEFDK Version        : CE4200 5.800 (HT enabled)
+CEFDK Version-Samsung: SMT-G7400 6.4
+Samsung Bootloader Version: SH-G7400DEUB-1006
+8051 Firmware        : B1-1.4.0
+Silicon Stepping     : C0 (FUSES)
+Board                : Silver Grove 
+CPU Threads          : 2
+CPU Multiplier       : 16
+CPU Bus Speed        : 100 MHz
+Memory Size          : 1024 MB
+Memory Type & Speed  : x16 DDR3-1333 (10-10-10) 
+Memory Configuration : A B Interleave Mode 1
+PCI Mode             : CE4200 Compatibility
+Boot Mode            : NOR 
+Media Device IRQ     : 4
+
+CEFDK Stage 1 version: 03/08/11 17:15:49
+CEFDK Stage 2 version: 02/18/12 19:39:12
+
+WARNING: Ancient bootloader, some functionality may be limited!
+
+
+starting pid 547, tty '': '/etc/init.d/rcS'
+##### Starting Scripts #####
+/etc/rc3.d/S003system_setup: line 62: syslogd: command not found
+/etc/rc3.d/S003system_setup SUCCESS
+Checking board...
+/etc/rc3.d/S006emmc SUCCESS
+Checking board...
+C0 box ..
+Checking board...
+
+===>> Run /etc/rc3.d/S009onenand Script.
+insmod phram.ko
+insmod: can't insert '/lib/onenand_modules/phram.ko': Input/output error
+mount: mounting /dev/mtdblock7 on /root failed: No such device
+/etc/rc3.d/S009onenand: Unable to mount  /dev/mtdblock7, Squashfs filesystem.
+VFS_format is 3
+/etc/rc3.d/S009onenand SUCCESS
+flash or HDD root file system
+/etc/rc3.d/S012network SUCCESS
+/etc/rc3.d/S018kernel SUCCESS
+/etc/rc3.d/S024osal SUCCESS
+/etc/rc3.d/S027pal SUCCESS
+/* LOAD "/etc/platform_config/ce4200/memory_layout_1G.hcfg" to (new) database location "platform.memory.layout"*/
+shifting platform_config media_base_address 584 MB ( 0x24800000 )
+/* EXECUTE config database location "platform.startup"*/
+/etc/rc3.d/S030platform_config SUCCESS
+/etc/rc3.d/S033system_utils SUCCESS
+/etc/rc3.d/S036sven SUCCESS
+/etc/rc3.d/S039idl SUCCESS
+/etc/rc3.d/S042clock_control SUCCESS
+/etc/rc3.d/S045intel_ce_pm SUCCESS
+/etc/rc3.d/S048smd_core SUCCESS
+/etc/rc3.d/S051gentimer SUCCESS
+SOC is SOC_NAME_CE4200
+/etc/rc3.d/S054sec SUCCESS
+[map( 0xdfb00000, 0x0007a000 ) = 0x6fa49000]
+[map( 0xdfb58000, 0x00080000 ) = 0x6f303000]
+[map( 0xdfb68000, 0x00080000 ) = 0x6f1e3000]
+/etc/rc3.d/S057display SUCCESS
+/etc/rc3.d/S060smd SUCCESS
+[map( 0xdf950000, 0x00010000 ) = 0x6ef74000]
+[map( 0xdf950000, 0x00007000 ) = 0x6ef6d000]
+/etc/rc3.d/S063hdmi SUCCESS
+/etc/rc3.d/S066edl SUCCESS
+/etc/rc3.d/S069graphics SUCCESS
+/etc/rc3.d/S072directfb SUCCESS
+/etc/rc3.d/S075init_pic_uart SUCCESS
+
+===>> Run /etc/rc3.d/S099Samsung Script.
+USB PHY drive strength port0 slope 011 amp 480mV, port1 slope 100 amp 460mV
+[Temperature check]
+Current CPU temperature is 49 degrees C
+init_socket() is called
+Fri Apr  1 00:00:00 UTC 2011
+----------------- WARNING -----------------------
+-- TV timings are not available                --
+-- To resolve this switch to static TV timings --
+NOT AS Mode
+Normal Boot
+/etc/rc3.d/S099Samsung SUCCESS
+HW REVISION is 7
+Checking if mab_monitor is running...
+Checking if drivers need to be unloaded...
+Loading mab with ...
+Loading oberon_upc_gateway with backend_enable_video_outputs=0 splash_enable=0 bsp_enable_atsc_usb=0 power_manager_delay=60 live_buffer_amt=27000 playback_buffer_amt=12000 param_tuner_model=0 param_type_nvram=0 ...
+Creating device nodes
+Loading mab_monitor
+Setting kernel and monitor threads to NDS Fusion priority levels
+Changing scheduling parameters for init: pid 1, policy 2, priority 97
+Changing scheduling parameters for kthreadd: pid 2, policy 2, priority 97
+Changing scheduling parameters for ksoftirqd/0: pid 3, policy 2, priority 91
+Changing scheduling parameters for ksoftirqd/1: pid 6, policy 2, priority 91
+Changing scheduling parameters for events/0: pid 7, policy 2, priority 97
+Changing scheduling parameters for events/1: pid 8, policy 2, priority 97
+Changing scheduling parameters for khelper: pid 9, policy 2, priority 97
+Changing scheduling parameters for async/mgr: pid 14, policy 2, priority 97
+Changing scheduling parameters for kblockd/0: pid 111, policy 2, priority 91
+Changing scheduling parameters for kblockd/1: pid 112, policy 2, priority 91
+Changing scheduling parameters for khubd: pid 222, policy 2, priority 97
+Changing scheduling parameters for kseriod: pid 225, policy 2, priority 97
+Changing scheduling parameters for kmmcd: pid 228, policy 2, priority 97
+Changing scheduling parameters for kswapd0: pid 353, policy 2, priority 97
+Changing scheduling parameters for aio/0: pid 354, policy 2, priority 97
+Changing scheduling parameters for aio/1: pid 355, policy 2, priority 97
+Changing scheduling parameters for crypto/0: pid 356, policy 2, priority 91
+Changing scheduling parameters for crypto/1: pid 357, policy 2, priority 91
+Changing scheduling parameters for mtdblock0: pid 455, policy 2, priority 97
+Changing scheduling parameters for mtdblock1: pid 460, policy 2, priority 97
+Changing scheduling parameters for mtdblock2: pid 465, policy 2, priority 97
+Changing scheduling parameters for mtdblock3: pid 470, policy 2, priority 97
+Changing scheduling parameters for mtdblock4: pid 475, policy 2, priority 97
+Changing scheduling parameters for mtdblock5: pid 480, policy 2, priority 97
+Changing scheduling parameters for mtdblock6: pid 485, policy 2, priority 97
+Changing scheduling parameters for ata_aux: pid 704, policy 2, priority 97
+Changing scheduling parameters for ata_sff/0: pid 705, policy 2, priority 97
+Changing scheduling parameters for ata_sff/1: pid 706, policy 2, priority 97
+Changing scheduling parameters for scsi_eh_0: pid 711, policy 2, priority 97
+Changing scheduling parameters for scsi_eh_1: pid 714, policy 2, priority 97
+Changing scheduling parameters for gdl_server: pid 916, policy 2, priority 97
+Changing scheduling parameters for CPU_Fan_Control: pid 1043, policy 2, priority 15
+Changing scheduling parameters for scm_reverse_manager: pid 1060, policy 2, priority 97
+Changing scheduling parameters for mab_monitor: pid 1121, policy 2, priority 15
+disabling reserved schedule time for SCHED_OTHER
+FOS Baseline : Unknown
+-----------------------------------------------------------
+UPC Horizon Integration Launch script for Samsung Platforms
+                      Release version                      
+-----------------------------------------------------------
+--------------------- Release: Only usb key device detection -----------------
+----------------- ENVIRONEMENT VARIABLES ----------------
+---------------------------------------------------------
+Drivers Rootfs:           RAM
+NFS mount present:        NO
+Execution from:           FLASH
+Ethernet interface:       br0
+SCD_Process in /NDS:      YES
+Perform mount on /NDS:    NO
+Unified Args:             NOCLEAN
+FATF/CI Target specified: 
+Is FORMAT param detected: NO
+Build options detected:   plt_samgw force_xbmc docsis
+XBMC                      ON
+XBMC forced by cmdline    NO
+Telnet start              NO
+---------------------------------------------------------
+Is GDB DEBUG:             NO
+Is DOCSIS Binary:         YES
+Is USBLOG param detected: NO
+---------------------------------------------------------
+----------------- Checking configuration ----------------
+configuration is OK
+------------------- mount management --------------------
+------------------- Release: bootlog process disabled ---------------------
+-------------------- unified startup call ---------------
+UNIFIED STARTUP
+mkdir: can't create directory '/fifo': File exists
+mkdir: can't create directory '/root': File exists
+copy_xtvfs_format_utility
+disable udev
+killall: udevd: no process killed
+firewall rules
+Bumping XTVFS priority
+pid 1305's current scheduling policy: SCHED_OTHER
+pid 1305's current scheduling priority: 0
+pid 1305's new scheduling policy: SCHED_RR
+pid 1305's new scheduling priority: 91
+ifconfig: SIOCSIFFLAGS: Cannot assign requested address
+ifconfig: SIOCSIFFLAGS: Cannot assign requested address
+------------------- Release: bootlog process disabled ---------------------
+--------------------- Debug Information -----------------
+============ Kernel IP info ....
+########## ROUTE :
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+224.0.0.0       0.0.0.0         240.0.0.0       U     0      0        0 br0
+########## ROUTE 6 :
+Kernel IPv6 routing table
+Destination                                 Next Hop                                Flags Metric Ref    Use Iface
+########## IFCONFIG -A : 
+br0       Link encap:Ethernet  HWaddr 3C:62:00:76:A5:72  
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+dummy0    Link encap:Ethernet  HWaddr 12:DD:C6:71:C1:D8  
+          BROADCAST NOARP  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+eth0      Link encap:Ethernet  HWaddr 3C:62:00:76:A5:72  
+          UP BROADCAST RUNNING PROMISC MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:2 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:132 (132.0 B)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+########## mounting points : 
+rootfs on / type rootfs (rw)
+proc on /proc type proc (rw,relatime)
+devpts on /dev/pts type devpts (rw,relatime,mode=600)
+none on /sys type sysfs (rw,relatime)
+tmpfs on /tmp type tmpfs (rw,relatime,size=40960k)
+usbfs on /proc/bus/usb type usbfs (rw,relatime,devgid=10000,devmode=664)
+tmpfs on /var type tmpfs (rw,relatime,size=8192k)
+/dev/stl0/11 on /vfs type ext3 (rw,relatime,errors=continue,barrier=1,data=journal)
+tmpfs on /fifo type tmpfs (rw,relatime)
+tmpfs on /dev/shm type tmpfs (rw,relatime)
+########## PS : 
+/NDS/start.sh: line 525: ps: command not found
+-------------- binary config file generation ------------
+
+File diagctl.cfg at line 1 is not in SystemConfigFormat (skipping).
+
+File webkit_whitelist.cfg at line 2 is not in SystemConfigFormat (skipping).
+-------------------- Release: Core dump disabled ----------------
+----------------- XBMC Management -----------------------
+Change working directory to xbmc.
+XH : XH_Init
+XH : parent
+XH : Child
+XH : end parent
+--------------------- STB ID management ------------------
+XH : end child
+select br0 interface
+******* CPE_IPADDR = **********
+--------------------- SCD_PROCESS Start -----------------
+Change working directory to /NDS/bin
+Launching application...
+------------------- Release: diagbinary process disabled ---------------------
+Starting normal mode
+trace log on terminal
+   Called xpower_initialise(5)
+   B'd rev_number = 7
+   HDD Sleep Timer Set
+   HDD Sleep Timer Set(10min) Success
+   Called xpower_get_capabilities
+Entering IPC_TL_SERVER_Init
+UPC Horizon Version Information:
+    Release: 1b-263.011.0n (RELEASE)
+    Build date: Oct  1 2013 15:00:51
+Entering IPC_TL_SERVER_Init
+Entering IPC_TL_SERVER_Init
+Entering IPC_TL_SERVER_Init
+   Called xpower_get_wake_up_cause
+   POWER_MANAGER_GET_WAKEUP_CAUSE
+   Called xpower_get_wake_up_cause = 0x1
+<null>
+<null>: return_status = 0x00000001
+<null>
+<null>: return_status = 0x770ff7a8
+<null>
+<null>: return_status = 0x00000001
+<null>
+<null>: return_status = 0x770fb42c
+<null>
+<null>: return_status = 0x770f732c
+NOCS 1.1 Chipset Security Driver, Version 1.1.0, Built Dec  3 2010, 11:02:44
+
+<null>
+<null>: return_status = 0x770f31e4
+<null>
+<null>: return_status = 0x770eeedc
+<null>
+<null>: return_status = 0x770ea9c4
+<null>
+<null>: return_status = 0x770e6860
+<null>
+<null>: return_status = 0x770e2220
+<null>
+<null>: return_status = 0x770d2750
+<null>
+<null>: return_status = 0x770ce3f0
+Entering IPC_TL_SERVER_Init
+       Ÿ™   fusion_pl_init in QFusionNoBlitPlatformIntegration
+Object::connect: No such signal Qt48Factory::sendEventSignal(QObject *, QEvent *) in qt48_factory.cpp:38
+/dev/sda2: recovering journal
+/dev/sda2: Superblock last mount time (Fri Apr  1 00:00:23 2011,
+	now = Fri Apr  1 00:00:17 2011) is in the future.
+FIXED.
+
+      20 inodes used (0.01%)
+       3 non-contiguous files (15.0%)
+       0 non-contiguous directories (0.0%)
+         # of inodes with ind/dind/tind blocks: 2/0/0
+   68680 blocks used (3.56%)
+       0 bad blocks
+       0 large files
+
+       5 regular files
+       6 directories
+       0 character device files
+       0 block device files
+       0 fifos
+       0 links
+       0 symbolic links (0 fast symbolic links)
+       0 sockets
+--------
+      11 files
+/dev/sda1: recovering journal
+/dev/sda1: Superblock last mount time (Fri Apr  1 00:00:23 2011,
+	now = Fri Apr  1 00:00:22 2011) is in the future.
+FIXED.
+
+      11 inodes used (0.01%)
+       0 non-contiguous files (0.0%)
+       0 non-contiguous directories (0.0%)
+         # of inodes with ind/dind/tind blocks: 0/0/0
+   12497 blocks used (5.56%)
+       0 bad blocks
+       0 large files
+
+       0 regular files
+       2 directories
+       0 character device files
+       0 block device files
+       0 fifos
+       0 links
+       0 symbolic links (0 fast symbolic links)
+       0 sockets
+--------
+       2 files
+   Called xpower_set_deferred_state xPowerState = 0x8 devices = 0x4
+   Current_Power_State(0x1) , xPowerState=(0x8)
+   Save the Ancillary_Device_Scheduled_State
+   Called xpower_set_state xPowerState= 0x8 wakeupCause = 0x1cf
+   XPOWER_ANCILLARY_SATA Power state -> 0
+   SATA_Control Start  (0)
+ => Same State, don't need to be set
+   cmd = hdparm -y /dev/sda
+   XPOWER_ANCILLARY_USB Power state -> 0
+   USB_Control Start (0)
+   POWER_MANAGER_SET_USB_STATE 0x0
+  result  0x0,  ONandOFF = 0x0
+   Power Manager was Same State with your request
+    gpio control start 
+   POWER_MANAGER_SET_USB_STATE SUCCESS
+   POWER_MANAGER_WAKE_UP_ALARM_CONTROL
+   POWER_MANAGER_SET_POWER_STATE
+   Called xpower_set_state xPowerState= 0x1 wakeupCause = 0x1cf
+   XPOWER_ANCILLARY_SATA Power state -> 1
+   SATA_Control Start  (1)
+   POWER_MANAGER_SET_SATA_STATE (1) : OK!
+   XPOWER_ANCILLARY_USB Power state -> 2
+   USB_Control Start (1)
+   POWER_MANAGER_SET_USB_STATE 0x1
+  result  0x0,  ONandOFF = 0x0
+    gpio control start 
+   POWER_MANAGER_SET_USB_STATE SUCCESS
+   POWER_MANAGER_WAKE_UP_ALARM_CONTROL
+   POWER_MANAGER_SET_POWER_STATE
+[backend:1198]BackendMonitor::handleRequest: [31mERROR[0m, end, gdl_port_send failed with error 13 (GDL_ERR_NO_HW_SUPPORT) BackendMonitor.cpp:461
+
+^C^C^^C
+
+^C
